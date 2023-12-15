@@ -1,0 +1,18 @@
+#!/bin/bash
+
+read -p "Enter the number of rows for the pyramid: " rows
+
+for ((i=1; i<=rows; i++)); do
+    # Print spaces
+    for ((j=i; j<=rows-1; j++)); do
+        echo -n " "
+    done
+
+    # Print asterisks
+    for ((k=1; k<=2*i-1; k++)); do
+        echo -n "*"
+    done
+
+    # Move to the next line
+    echo
+done
